@@ -53,9 +53,9 @@ export function Contact() {
                 <em className="text-gold not-italic font-medium">your next project.</em>
               </h2>
               <p className="font-body text-white/60 text-base leading-relaxed mb-12 max-w-md">
-                I'm actively exploring Senior Project Manager opportunities in Dubai.
+                I'm actively exploring remote Project Manager/Coordinator opportunities worldwide.
                 If you're building a team that needs someone who's delivered in high-stakes,
-                multi-stakeholder environments — I'd love to hear from you.
+                multi-stakeholder environments - I'd love to hear from you.
               </p>
 
               {/* Contact links */}

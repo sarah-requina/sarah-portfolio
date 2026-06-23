@@ -67,7 +67,7 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="font-mono text-[10px] tracking-widest uppercase text-parchment/80">
-                  Based in Dubai · Available for UAE opportunities
+                  Based in Dubai · Open to Remote Opportunities Worldwide
                 </p>
               </div>
             </motion.div>
@@ -110,7 +110,7 @@ export function About() {
                 the plan. I've developed that discipline across four industries and two continents.
               </p>
               <p>
-                I'm currently based in Dubai and actively seeking a Senior Project Manager role where
+                I'm currently based in Dubai and actively seeking a Project Manager/Coordinator role where
                 multi-stakeholder complexity is the norm, not the exception — in events, real estate,
                 healthcare, or high-growth operations.
               </p>
@@ -155,8 +155,7 @@ export function About() {
               <div>
                 <p className="font-body font-medium text-charcoal text-sm">Open to opportunities</p>
                 <p className="font-body text-text-secondary text-sm mt-0.5">
-                  Available for full-time Senior PM roles in Dubai. Open to project-based engagements
-                  with a clear scope.
+                  Available for Project Manager/Coordinator opportunities globally, leading cross-functional teams across time zones and geographies.
                 </p>
               </div>
             </motion.div>
