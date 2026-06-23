@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, TrendingUp, Shield, Globe, Users, Zap } from "lucide-react";
+import { Award, TrendingUp, Shield, Globe, Users, Zap, LucideIcon } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import { achievements, stats } from "@/lib/data";
 import { getColorClasses, cn } from "@/lib/utils";
 import { useCounter } from "@/hooks/useCounter";
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const iconMap: Record<string, LucideIcon> ={
   Award,
   TrendingUp,
   Shield,
