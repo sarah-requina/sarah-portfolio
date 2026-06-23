@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, TrendingUp, Shield, Globe, Users, Zap, LucideIcon } from "lucide-react";
+import { Award, TrendingUp, Shield, Globe, Users, Zap } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import { achievements, stats } from "@/lib/data";
 import { getColorClasses, cn } from "@/lib/utils";
 import { useCounter } from "@/hooks/useCounter";
 
-const iconMap: Record<string, LucideIcon> ={
+const iconMap = {
   Award,
   TrendingUp,
   Shield,
   Globe,
   Users,
   Zap,
-};
+} as const;
 
 function StatCounter({ value, label, suffix = "" }: { value: string; label: string; suffix?: string }) {
   const { ref, isInView } = useInView<HTMLDivElement>({ threshold: 0.5 });
@@ -71,7 +71,8 @@ export function AchievementsDashboard() {
         {/* Achievements grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {achievements.map((ach, i) => {
-            const Icon = iconMap[ach.icon] ?? Award;
+            const Icon = 
+              iconMap[ach.icon as keyof typeof iconMap] ?? Award;
             const colorClasses = getColorClasses(ach.color);
 
             return (
