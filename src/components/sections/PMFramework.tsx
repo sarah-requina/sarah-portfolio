@@ -13,13 +13,13 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const iconMap = {
   Search,
   LayoutGrid,
   Zap,
   Activity,
   CheckCircle,
-};
+} as const;
 
 export function PMFramework() {
   const { ref: headerRef, isInView } = useInView<HTMLDivElement>({ threshold: 0.1 });
@@ -90,7 +90,8 @@ export function PMFramework() {
         {/* Phases grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-0">
           {pmFramework.map((phase, i) => {
-            const Icon = iconMap[phase.icon] ?? Search;
+            const Icon = 
+              iconMap[phase.icon as keyof typeof iconMap] ?? Search;
             return (
               <motion.div
                 key={phase.phase}
