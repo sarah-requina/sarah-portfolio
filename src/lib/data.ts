@@ -3,9 +3,9 @@ export const personalInfo = {
   title: "Senior Project Manager",
   tagline: "Turning complexity into clarity — one delivered milestone at a time.",
   location: "Dubai, UAE",
-  email: "sarah.requina@email.com",
+  email: "requinasarah@gmail.com",
   linkedin: "linkedin.com/in/sarahrequina",
-  phone: "+971 XX XXX XXXX",
+  phone: "+971 58 598 4221",
   heroImage: "/sarah-portrait.jpg", // Replace with actual photo path
   heroImageAlt: "Sarah Requina, Senior Project Manager, Dubai",
   summary:
