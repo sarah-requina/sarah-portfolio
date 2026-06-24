@@ -68,7 +68,7 @@ export function Navigation() {
               Sarah Requina
             </span>
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-text-muted">
-              Project Manager
+              Senior Project Manager
             </span>
           </button>
 
